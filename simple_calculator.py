@@ -1,4 +1,6 @@
 import re
+def mul(num):
+	return float(num[0]) * float(num[1])
 
 def div(num):
 	return float(num[0]) / float(num[1])
