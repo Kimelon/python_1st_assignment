@@ -10,7 +10,8 @@ def add(num):
 		b = float(num[1])
 	else:
 		b = int(num[1])
-	return a + b0
+	return a + b
+
 def sub(num):
 	#if there is the ".", the number should be converted to float type;
 	if re.findall("\\.",num[0]):
