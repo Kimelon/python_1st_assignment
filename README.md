@@ -2,7 +2,7 @@
 
 This project is created for the first python assignment.
 
-The numbers of our group are:
+The nembers of our group are:
 
 Hongbo Yu
 
