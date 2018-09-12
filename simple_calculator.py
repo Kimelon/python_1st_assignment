@@ -1,5 +1,17 @@
 import re
 
+def add(num):
+	#if there is the ".", the number should be converted to float type;
+	if re.findall("\\.",num[0]):
+		a = float(num[0])
+	else:
+		a = int(num[0])
+	if re.findall("\\.",num[1]):
+		b = float(num[1])
+	else:
+		b = int(num[1])
+	return a + b
+
 print("Welcome!!!")
 print("This is a simple calculator with four functions,")
 print("which are addition, subtraction, multiplication and division.")
