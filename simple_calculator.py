@@ -1,4 +1,5 @@
 import re
+
 def div(num):
 	return float(num[0]) / float(num[1])
 
@@ -17,14 +18,14 @@ def add(num):
 def sub(num):
 	#if there is the ".", the number should be converted to float type;
 	if re.findall("\\.",num[0]):
-		a=float(num[0])
+		a = float(num[0])
 	else:
-		a=int(num[0])
+		a = int(num[0])
 	if re.findall("\\.",num[1]):
-		b=float(num[1])
+		b = float(num[1])
 	else:
-		b=int(num[1])
-	return a-b
+		b = int(num[1])
+	return a - b
 
 print("Welcome!!!")
 print("This is a simple calculator with four functions,")
@@ -42,7 +43,8 @@ while True:
 		print("1-1")
 		print("2*2")
 		print("3/2")
-		print("Be careful that multiplication and division will be forced to excute float-point operation")
+		print("Be careful that multiplication and division will be forced to excute float-point operation.")
+		continue
 	num = re.findall("\d+\.\d|\d+", cmd)
 	operator = re.findall("\\+|\\-|\\*|\\/",cmd)
 	if operator[0] == "+":
