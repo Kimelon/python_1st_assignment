@@ -1,4 +1,6 @@
 import re
+def div(num):
+	return float(num[0]) / float(num[1])
 
 def add(num):
 	#if there is the ".", the number should be converted to float type;
